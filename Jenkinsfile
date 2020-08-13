@@ -38,8 +38,8 @@ pipeline {
                 }
                 stage('Code Analysis') {
                     steps {
-                        echo "Running place holder for sonarcube"
-                        //gradlew('sonarqube')
+                        //echo "Running place holder for sonarcube"
+                        gradlew('sonarqube')
                     }
                 }
             }
