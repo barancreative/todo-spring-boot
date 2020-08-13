@@ -22,9 +22,9 @@ pipeline {
             }
         }
         stage('Long-running Verification') {
-            //environment {
-                //SONAR_LOGIN = credentials('SONARCLOUD_TOKEN')
-            //}
+            environment {
+                SONAR_LOGIN = credentials('SONAR_CUBE_KEY')
+            }
             parallel {
                 stage('Integration Tests') {
                     steps {
