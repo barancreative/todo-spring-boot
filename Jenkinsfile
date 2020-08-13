@@ -76,5 +76,5 @@ pipeline {
 }
 
 def gradlew(String... args) {
-    bat label: "function" script: "./gradlew ${args.join(' ')}"
+    bat label: "function", script: "./gradlew ${args.join(' ')}"
 }
