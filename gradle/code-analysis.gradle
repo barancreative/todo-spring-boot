@@ -15,7 +15,7 @@ sonarqube {
     properties {
         property 'sonar.host.url', 'https://sonarcloud.io'
         property 'sonar.organization', 'gurubaran-org'
-        property 'sonar.login', System.getenv('SONAR_CUBE_KEY')
+        property 'sonar.login', System.getenv('SONAR_LOGIN')
         property 'sonar.projectKey', 'todo-spring-boot-baran'
         properties['sonar.tests'] += sourceSets.integrationTest.java.srcDirs
     }
