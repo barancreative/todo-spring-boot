@@ -64,7 +64,7 @@ pipeline {
             steps {
                 unstash 'app'
                 //gradlew('deployHeroku')
-                echo "place holder for deployement done"
+                echo "place holder for deployement done in blue ocean"
             }
         }
     }
